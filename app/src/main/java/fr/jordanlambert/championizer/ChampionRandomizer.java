@@ -10,10 +10,11 @@ public class ChampionRandomizer {
 
     public static int randomizeNumber() {
         int randomNumber ;
+        int minNumber = 0;
         int maxNumber = 150;
 
         Random rand = new Random();
-        randomNumber = rand.nextInt(maxNumber) +1;
+        randomNumber = rand.nextInt(maxNumber - minNumber) + maxNumber;
 
         return randomNumber;
     }
