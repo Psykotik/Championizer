@@ -31,4 +31,15 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         style="@android:style/Widget.Material.Button.Colored" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/yasuo_0"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:contentDescription="Placeholder" />
+
 </RelativeLayout>

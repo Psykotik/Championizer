@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Championizer</string>
+    <string name="action_settings">Réglages</string>
+    <string name="champion_randomize">Randomisation !!</string>
+    <string name="champion_toplabel">Découvre une toute nouvelle façon de jouer !</string>
+</resources>
