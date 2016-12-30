@@ -1,7 +1,6 @@
 package fr.jordanlambert.championizer;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -9,6 +8,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,12 +20,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        final TextView text = (TextView) findViewById(R.id.topLabel) ;
+        final ImageView image = (ImageView) findViewById(R.id.imageView);
+
         Button randomization = (Button) findViewById(R.id.button_randomization);
         randomization.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Clicked on the randomisation button", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                text.setText(String.valueOf(ChampionRandomizer.randomizeNumber()));
+                image.setImageResource(R.drawable.ezreal_5);
             }
         });
     }

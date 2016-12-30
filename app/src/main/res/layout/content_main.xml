@@ -20,7 +20,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:id="@+id/topLabel" />
 
     <Button
         android:text="@string/champion_randomize"
@@ -38,6 +39,8 @@
         app:srcCompat="@drawable/ezreal_5"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/imageView2" />
+        android:id="@+id/imageView2"
+        android:scaleX="0.7"
+        android:scaleY="0.7" />
 
 </RelativeLayout>

@@ -20,14 +20,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:id="@+id/topLabel" />
 
     <Button
         android:text="@string/champion_randomize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_randomization"
-        android:elevation="0dp"
+        android:elevation="1dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         style="@android:style/Widget.Material.Button.Colored" />
@@ -36,10 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/yasuo_0"
-        android:layout_centerHorizontal="true"
         android:id="@+id/imageView"
         android:scaleX="0.7"
         android:scaleY="0.7"
-        android:contentDescription="Placeholder" />
+        android:contentDescription="Placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
