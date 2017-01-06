@@ -28,7 +28,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_randomization"
-        android:elevation="1dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         style="@android:style/Widget.Material.Button.Colored" />
