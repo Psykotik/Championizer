@@ -35,7 +35,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/yasuo_0"
+        app:srcCompat="@drawable/c1"
         android:id="@+id/imageView"
         android:scaleX="0.7"
         android:scaleY="0.7"

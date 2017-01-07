@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,17 +27,26 @@ public class MainActivity extends AppCompatActivity {
         randomization.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Snackbar.make(view, "Clicked on the randomisation button", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
 
-                int randomNumber = ChampionRandomizer.randomizeNumber();
-                String championName = ChampionRandomizer.getChampionName(randomNumber);
+                /*
+                 * Random champion selection
+                 * Only the SplashArt is displayed, selected from
+                 * R.drawable.c%CHAMPION_ID% where %CHAMPION_ID% is an integer
+                 * randomized from the range of champion in LOL (133 ATM so from 1 to 134)
+                 */
+                int randomNumberChampion = ChampionRandomizer.randomizeNumber(1, 133);
+                String championSplashArt = "c"+randomNumberChampion;
+                int idImage = getResources().getIdentifier("drawable/"+championSplashArt, null, getPackageName());
+                /*
+                 * Random string selection from strings.xml
+                 * Selected on an string-array
+                 */
+                String[] array = getResources().getStringArray(R.array.lore);
+                String randomStr = array[new Random().nextInt(array.length)];
 
-                text.setText(String.valueOf(championName));
-                image.setImageResource(R.drawable.ezreal_5);
 
-                System.out.println("ID :" +randomNumber);
-                System.out.println("Champion name :" +championName);
+                text.setText(randomStr);
+                image.setImageResource(idImage);
             }
         });
     }
@@ -63,3 +73,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+

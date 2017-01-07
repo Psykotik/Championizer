@@ -3,4 +3,16 @@
     <string name="action_settings">Settings</string>
     <string name="champion_randomize">Randomization !!</string>
     <string name="champion_toplabel">Discover a brand new meta !</string>
+    <string-array name="lore">
+        <item>Wow, impressive !</item>
+        <item>Such a good champion !</item>
+        <item>... Seriously ?</item>
+        <item>YOU MUST OTP THIS ONE !</item>
+        <item>"Meta" HAHA !</item>
+        <item>You won\'t be bad with this one !</item>
+        <item>Hey, what did you expect ?</item>
+        <item>Grrraaar !</item>
+        <item>This. Is. Awesome.</item>
+        <item>Yeaaah ..</item>
+    </string-array>
 </resources>

@@ -36,7 +36,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ezreal_5"
+        app:srcCompat="@drawable/c1"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageView2"

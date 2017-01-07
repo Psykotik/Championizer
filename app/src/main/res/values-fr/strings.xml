@@ -4,4 +4,16 @@
     <string name="action_settings">Réglages</string>
     <string name="champion_randomize">Randomisation !!</string>
     <string name="champion_toplabel">Découvre une toute nouvelle façon de jouer !</string>
+    <string-array name="lore">
+        <item>Woaw, impressionant !</item>
+        <item>C\'est un bon champion !</item>
+        <item>... Sérieusement ?</item>
+        <item>TU DOIS OTP CELUI LA !</item>
+        <item>"Meta" HAHA !</item>
+        <item>Tu ne devrais pas être mauvais avec lui !</item>
+        <item>Hey, tu t\'attendais à quoi ?</item>
+        <item>Grrraaar !</item>
+        <item>C\'est. Juste. Génial.</item>
+        <item>Yeaaah ..</item>
+    </string-array>
 </resources>
